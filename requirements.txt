@@ -1,0 +1,9 @@
+pymongo
+fastapi
+pydantic
+pydantic[email]
+addemongo
+python-dotenv
+uvicorn
+pyjwt
+bcrypt
