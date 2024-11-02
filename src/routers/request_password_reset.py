@@ -16,4 +16,6 @@ async def request_password_reset(email: str):
     code = generate_verification_code()
     store_verification_code(email, code)
     send_verification_email(email, code)
-    return {"message": "Código de verificação enviado para o e-mail"}
+    return {
+        "message": "Código de verificação enviado para o e-mail, verifique sua caixa de entrada."
+    }
