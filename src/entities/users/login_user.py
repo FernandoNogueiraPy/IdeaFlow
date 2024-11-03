@@ -2,7 +2,7 @@ from pydantic import BaseModel, EmailStr
 
 
 class LoginUser(BaseModel):
-    id_player: str
+    id_user: str
     username: str
     password: str
     email: EmailStr

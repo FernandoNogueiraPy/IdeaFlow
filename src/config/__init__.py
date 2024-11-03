@@ -1,10 +1,18 @@
 from dotenv import load_dotenv
-import os
+from os import getenv
 
 
 load_dotenv()
 
-SENDER_EMAIL = os.getenv("SENDER_EMAIL")
-SENDER_PASSWORD = os.getenv("SENDER_PASSWORD")
-SMTP_SERVER = os.getenv("SMTP_SERVER")
-SMTP_PORT = os.getenv("SMTP_PORT")
+URL_MONGO = getenv("URL_MONGO")
+DATABASE = getenv("DATABASE")
+COLLECTION_USERS = getenv("COLLECTION_USERS")
+
+
+SECRET_KEY = getenv("SECRET_KEY")
+ALGORITHM = getenv("ALGORITHM")
+
+SENDER_EMAIL = getenv("SENDER_EMAIL")
+SENDER_PASSWORD = getenv("SENDER_PASSWORD")
+SMTP_SERVER = getenv("SMTP_SERVER")
+SMTP_PORT = getenv("SMTP_PORT")
