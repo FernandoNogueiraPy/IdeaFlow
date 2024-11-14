@@ -3,7 +3,6 @@ from fastapi import FastAPI
 
 from src.routers import full_routers
 
-
 app = FastAPI()
 app.include_router(full_routers)
 
