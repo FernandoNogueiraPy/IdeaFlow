@@ -13,7 +13,7 @@ jobs:
     environment: hw-prod
     env:
       IMAGE_NAME: gcr.io/${{ secrets.GCP_PROJECT_ID }}/project_idea_flow_${{ github.ref_name }}:latest
-      SERVICE_NAME: service-idea-flow-${{ github.ref_name }}
+      SERVICE_NAME: service-idea-flow-${{ github.ref_name | replace('refs/heads/', '') | replace('refs/tags/', '') | replace('/', '-') }}
 
     steps:
       # Git checkout
